@@ -1,0 +1,1611 @@
+
+
+
+/* 메인 전체틀 */
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 1280px;
+    margin: 0 auto;
+}
+.container .col-left{ width: 830px; }
+.container .col-right{ width: 420px; }
+
+
+
+/* 광고 전체틀 */
+.ad-aside{
+    overflow: hidden;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 0 0 1px #e3e5e8, 0 1px 2px 0 rgba(0,0,0,.04);
+}
+.ad-aside a{ display: block; }
+
+
+
+/* 박스 전체 모양 */
+.Layout-module {
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 0 0 1px #e3e5e8, 0 1px 2px 0 rgba(0,0,0,.04);
+    background-color: #fff;
+}
+
+
+
+/* right 로그인*/
+.sc-login{
+    padding: 21px 20px 18px;
+    margin-bottom: 16px;
+    line-height: 20px;
+    text-align: center;
+}
+.sc-login .login-msg{ font-size: 15px; }
+.sc-login .link-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 13px;
+    padding: 17px 0;
+    border: 1px solid rgba(0,0,0,.06);
+    border-radius: 4px;
+    background-color: #03c75a;
+    box-shadow: 0 2px 4px 0 rgba(3,199,90,.12);
+    color: #fff;
+    font-size: 15px;
+}
+.sc-login .link-login::before{
+    content: '';
+    background-position: -120px -166px;
+    width: 72px;
+    height: 14px;
+}
+.sc-login .auth-area{
+    color: #606060;
+    margin-top: 16px;
+    font-size: 14px;
+}
+.sc-login .auth-area a+a::before{
+    display: inline-block;
+    content: "";
+    width: 1px;
+    height: 12px;
+    background-color: #d3d5d7;
+    margin: 4px 12px 0;
+    vertical-align: top;
+    background-color: #d3d5d7;
+}
+
+
+
+/* 날씨 */
+.weather{
+    margin-top: 16px;
+    padding: 0 18px;
+    margin-bottom: 16px;
+}
+/* 날씨공통영역 */
+.info-group{
+    flex: 1;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+}
+.info-group .infobox-module{
+    position: relative;
+    flex: 1;
+    min-width: 0;
+    margin: 20px 0 18px;
+}
+.weather-area .header-group{
+    position: relative;
+    display: flex;
+    padding: 6px 0;
+    line-height: 40px;
+}
+.weather .weather-area .flex{ display: flex; }
+.weather .header-group .title{
+    color: #080808;
+    color: var(--color_title);
+    display: inline-block;
+    padding-right: 7px;
+    font-size: 15.8px;
+    font-weight: 800;
+    vertical-align: top;
+}
+.weather .header-group .link-ic{
+    border: 1px solid #ebebeb;
+    background-color: #fff;
+    color: #606060;
+    display: inline-block;
+    min-width: 75px;
+    height: 26px;
+    margin-top: 7px;
+    padding: 0 10px 0 7px;
+    border-radius: 15px;
+    font-size: 11.6px;
+    line-height: 25px;
+    vertical-align: top;
+}
+.weather .header-group .link-ic::before{
+    content: "";
+    display: inline-block;
+    background-position: -47px -389px;
+    width: 12px;
+    height: 12px;
+    margin: 6px 2px 0 0;
+    vertical-align: top;
+}
+.weather .header-group .text-area{
+    color: #606060;
+    margin-left: auto;
+    font-size: 13.5px;
+}
+.infobox-module .flex-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1px;
+}
+.info-weather .weather-icon{
+    width: 86px;
+    height: 86px;
+    margin-right: 4px;
+}
+.info-weather .weather-icon::before{
+    content: "";
+    display: block;
+    background-image: url(https://pm.pstatic.net/resources/asset/sp_weather.11654bc0.png);
+    background-size: 641px 587px;
+    background-position: 0px -174px;
+    background-repeat: no-repeat;
+    width: 86px;
+    height: 86px;
+}
+.infobox-module .info-temperateure{
+    min-width: 0;
+    font-size: 41px;
+    line-height: 48px;
+    letter-spacing: -2px;
+}
+.infobox-module .text-temperateure{
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-left: 5px;
+    font-size: 14.7px;
+    line-height: 20px;
+    font-weight: bold;
+    letter-spacing: -0.3px;
+}
+.link-top .info-bottom{
+    margin-top: 16px;
+    line-height: 16px;
+    text-align: center;
+}
+.link-top .info-bottom .info-text1{color: #3172e7;}
+.link-top .info-bottom .info-text2{color: #cd3534;}
+.link-top .info-text2::before{
+    content: "";
+    display: block;
+    display: inline-block;
+    width: 1px;
+    height: 11px;
+    background-color: #d3d5d7;
+    margin: 0 5px 0 3px;
+    transform: skewX(-15deg);
+}
+
+.infobox-module .link-bottom{
+    display: block;
+    margin-top: 6px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 13.65px;
+}
+.infobox-module .link-bottom .text{
+    display: inline-block;
+    vertical-align: top;
+}
+.infobox-module .link-bottom i{
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    background-color: #d3d5d7;
+    margin: 8px 6px 0;
+    border-radius: 50%;
+    vertical-align: top;
+}
+.infobox-module .link-bottom .good{
+    color: #32a1ff;
+    margin-left: 4px;
+}
+/* 날씨오른쪽 */
+.weather .wearher_inner{
+    display: block;
+    position: relative;
+}
+.wearher_inner .weather_list{
+    display: flex;
+    justify-content: space-between;
+    height: 143px;
+}
+.wearher_inner .weather_item{
+    position: relative;
+    width: 32px;
+    text-align: center;
+}
+.weather_item .time{
+    position: absolute;
+    bottom: 0;
+    color: #101010;
+    font-weight: bold;
+}
+.weather_item .ic{
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+    left: 0;
+    width: 32px;
+    height: 32px;
+}
+.weather_item .ic::before{
+    display: block;
+    content: "";
+    background-image: url(https://pm.pstatic.net/resources/asset/sp_weather.11654bc0.png);
+    background-size: 641px 587px;
+    background-position: -198px -522px;
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+}
+.weather_item .temperateure{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 60px;
+    left: 0;
+    font-size: 14px;
+    line-height: 16px;
+}
+.weather_item .temperateure::before{
+    display: block;
+    content: "";
+    position: absolute;
+    top: 40px;
+    bottom: 0;
+    left: 15px;
+    background-color: #ebebeb;
+    width: 1px;
+}
+
+
+
+/* 증권 */
+.stock{padding: 0 18px;}
+.stock .header-group{
+    position: relative;
+    display: flex;
+    padding: 6px 0;
+    line-height: 40px;
+}
+.stock .header-group .title{
+    display: inline-block;
+    color: #080808;
+    padding-right: 7px;
+    font-size: 15.75px;
+    font-weight: 800;
+    vertical-align: top;
+}
+.stock .header-group .btn-info{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    margin: 10px 0 0 -4px;
+}
+.stock .header-group .btn-info::before{
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-position: -137px -270px;
+    width: 14px;
+    height: 14px;
+    margin: auto;
+}
+.stock .header-group .time-area{
+    color: #606060;
+    flex: none;
+    margin-left: auto;
+    font-size: 13.65px;
+}
+.stock .info-group {display: flex;}
+.stock .info-group .infobox-module{flex: 1;}
+.stock .info-group .infobox-module img{width: 100%;}
+.stock .time-area .btn-refresh{
+    display: inline-block;
+    padding: 12px 0 12px 5px;
+    vertical-align: top;
+}
+.stock .time-area .btn-refresh::before{
+    content: "";
+    display: block;
+    background-position: -416px -313px;
+    width: 16px;
+    height: 16px;
+}
+
+/* 증권아래 오른쪽 */
+.stock .stock-list{}
+.stock .stock-item{
+    border-bottom: 1px solid #ebebeb;
+    height: 38px;
+}
+.stock .stock-item .link-box{
+    display: flex;
+    padding: 6px 0 9px;
+    justify-content: space-between;
+    padding: 8px 0 9px;
+    line-height: 21px;
+    font-size: 14.7px;
+}
+.stock .stock-item .stock-name{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 78px;}
+.stock .stock-item .ic-stock{
+    display: inline-block;
+    content: '';
+    background-position: -148px -389px;
+    width: 9px;
+    height: 11px;
+    margin: 5px 4px 0 0;
+    background-color: rgba(0,0,0,0);
+}
+.stock .stock-item .ic-more{
+    display: block;
+    position: relative;
+}
+.stock .stock-item .ic-more::after{
+    display: block;
+    content: "";
+    position: absolute;
+    top: 13px;
+    right: 0;
+    background-position: -137px -389px;
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 12px;
+}
+
+
+
+/* 위젯보드 */
+.col-right .widgetboard{
+    margin-top: 16px;
+    background-color: #f4f6fa;
+    margin-bottom: 16px;
+    padding: 15px 18px 20px;
+    box-shadow: 0 0 0 1px #e3e5e8, 0 1px 2px 0 rgba(0,0,0,.04);
+    border-radius: 8px;
+}
+.widgetboard h2{
+    color: #080808;
+    position: relative;
+    padding-bottom: 1px;
+    font-size: 15.75px;
+    line-height: 24px;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+.widgetboard-content{
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(10,auto);
+    grid-template-rows: repeat(3,auto);
+}
+.widgetboard-content li:nth-child(1){grid-column: span 5;}
+.widgetboard-content li:nth-child(2){grid-column: span 5;}
+.widgetboard-content li:nth-child(3){grid-column: span 5;}
+.widgetboard-content li:nth-child(4){grid-column: span 5;}
+.widgetboard-content li:nth-child(5){grid-column: span 10;}
+.widgetboard-content .group-tool{
+    width: 186px;
+    height: 192px;
+    background-color: #fff;
+    box-shadow: 0 0 0 1px #ebebeb, 0 1px 2px 0 rgba(0,0,0,.04);
+    border-radius: 8px;
+}
+/* 캘린더 */
+.widgetboard-content .calendar-info{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+    gap: 8px;
+    padding: 9px 7px;
+}
+.widgetboard-content .calendar-title{
+    color: #080808;
+    padding-left: 11px;
+    font-size: 15.75px;
+    line-height: 34px;
+    font-weight: 800;
+}
+.widgetboard-content .calendar-box{
+    display: flex;
+    align-items: baseline;
+    gap: 9px;
+    padding-left: 11px;
+}
+.widgetboard-content .calendar-box .date{
+    font-size: 41px;
+    line-height: 36px;
+    letter-spacing: -2px;
+}
+.calendar-login{
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: #606060;
+    text-decoration: underline;
+    font-size: 14.7px;
+}
+/* 메모 */
+.widgetboard .memo-top{
+    display: flex;
+    position: relative;
+    padding: 7px 9px;
+    border-radius: 8px 8px 0 0;
+    background-image: linear-gradient(to top, #00b869, #00c772);
+    line-height: 34px;
+}
+.widgetboard .memo-top::before{
+    display: block;
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 2px;
+    left: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.4) 70%, transparent 30%);
+    background-size: 6px 1px;
+}
+.widgetboard .memo-top .memo-title{
+    flex-basis: 50%;
+    padding-left: 10px;
+    font-size: 15.75px;
+    font-weight: 800;
+    color: #fff;
+}
+.memo-info .info-list{ padding: 0 0 4px; }
+.memo-info .info-item{
+    height: 46px;
+    padding: 0 18px;
+    line-height: 46px;
+    border-top: 1px solid #ebebeb;
+}
+.memo-info .info-item .login-text{
+    display: block;
+    color: #606060;
+    line-height: 43px;
+    text-decoration: underline;
+    font-size: 14.7px;
+}
+/* 파파고 */
+.widgetboard .papago-icon{ position: relative; }
+.widgetboard .papago-icon::before{
+    display: block;
+    content: "";
+    position: absolute;
+    top: 54px;
+    left: 54px;
+    background-position: 0px 0px;
+    width: 78px;
+    height: 68px;
+}
+.widgetboard .papago-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 18px 18px 12px 18px;
+}
+.papago-box .ic-papago-text::before{
+    display: block;
+    content: '';
+    background-position: -164px -183px;
+    width: 76px;
+    height: 17px;
+}
+.papago-box .papago-button{
+    margin: 0 13px;
+    border-radius: 20px;
+    background-color: #00a2ff;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.04);
+    font-size: 13.5px;
+    line-height: 40px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+}
+/* 영어사전 */
+.widgetboard .group-dictionary{
+    position: relative;
+    height: 100%;
+}
+.widgetboard .group-dictionary::before{
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 3px;
+    bottom: 0;
+    width: 14px;
+    border-radius: 0 8px 8px 0;
+    -webkit-box-shadow: 0 0 0 1px #ebebeb, 1px 0 2px 0 rgba(0,0,0,.04);
+    box-shadow: 0 0 0 1px #ebebeb, 1px 0 2px 0 rgba(0,0,0,.04);
+}
+.group-dictionary .dictionary-inner{
+    background-color: #fff;
+    position: relative;
+    height: 100%;
+    margin-right: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0 0 0 1px #ebebeb, 1px 0 2px 0 rgba(0,0,0,.04);
+    box-shadow: 0 0 0 1px #ebebeb, 1px 0 2px 0 rgba(0,0,0,.04);
+}
+.dictionary-inner .link-title{
+    color: #080808;
+    display: block;
+    padding: 16px 18px 19px;
+    font-size: 15.75px;
+    line-height: 20px;
+    font-weight: 800;
+}
+.dictionary-inner .link-inner{
+    display: block;
+    position: relative;
+    height: 106px;
+    text-decoration: none;
+}
+.dictionary-inner .link-inner::before{
+    display: block;
+    content: "";
+    position: absolute;
+    top: -3px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-top: 1px solid #e8effb;
+    background: -o-radial-gradient(bottom, circle, #e8effb 1px, transparent 0) top/1px 21px;
+    background: radial-gradient(circle at bottom, #e8effb 1px, transparent 0) top/1px 21px;
+}
+.widgetboard .dictionary-box{
+    position: absolute;
+    top: 15;
+    z-index: 20;
+    margin: 0 18px;
+}
+.widgetboard .dictionary-text{
+    max-height: 105px;
+    line-height: 21px;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: -0.2px;
+}
+/* now */
+.widgetboard .wide{
+    width: 385px;
+    height: 254px;
+}
+.widgetboard .now-top{ padding: 18px 18px 0; }
+.widgetboard .now-top .now-text{ height: 18px; }
+.widgetboard .now-top .now-text::before{
+    content: "";
+    display: inline-block;
+    background-position: 0px -270px;
+    width: 49px;
+    height: 16px;
+}
+.widgetboard .now-info{
+    overflow: hidden;
+    margin: 14px 0 14px 18px;
+}
+.widgetboard .now-info .now-list{
+    display: flex;
+    gap: 12px;
+}
+.widgetboard .now-info .now-item{ width: 100px; }
+.widgetboard .now-item img{
+    background: #ccc;
+    border-radius: 4px;
+    height: 140px;
+    width: 100px;
+}
+.widgetboard .now-item .link-text{
+    font-size: 14.72px;
+    display: block;
+    display: -webkit-box;
+    overflow: hidden;
+    max-height: 40px;
+    line-height: 20px;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    margin-top: 8px;
+}
+/* 위젯하단 */
+.widgetboard .link-navermain{
+    position: relative;
+    display: block;
+    margin-bottom: -15px;
+    padding: 21px 0 17px;
+    line-height: 25px;
+}
+.link-navermain .more-text{
+    display: inline-block;
+    vertical-align: top;
+}
+.link-navermain .more-text::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 28px;
+    right: 4px;
+    background-position: -326px -225px;
+    width: 8px;
+    height: 12px;
+}
+.link-navermain .more-text .main-text{ font-weight: bold; }
+.link-navermain .more-text .main-text::before{
+    content: "";
+    display: inline-block;
+    background-position: -391px -98px;
+    width: 22px;
+    height: 22px;
+    margin: 2px 11px 0 3px;
+    vertical-align: top;
+}
+
+
+
+/* 웨일배너 */
+.whale{
+    position: relative;
+    padding: 8px 50px 8px 18px;
+}
+.banner-box .banner-rolling{
+    display: flex;
+    overflow: hidden;
+    width: 352px;
+}
+.banner-rolling .link-banner{
+    color: #404040;
+    display: flex;
+    align-items: center;
+    width: 352px;
+    padding: 11px 0;
+    line-height: 20px;
+    font-size: 14.7px;
+    padding: 11px 0;
+}
+.banner-rolling .link-banner .ic-whale{
+    display: block;
+    content: "";
+    background-position: -201px -143px;
+    width: 42px;
+    height: 36px;
+    margin-right: 12px;
+}
+.banner-rolling .link-banner .banner-text{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.banner-rolling .link-banner .text1-top{
+    overflow: hidden;
+    color: #101010;
+    font-weight: bold;
+}
+.banner-rolling .link-banner .text1-bottom{
+    overflow: hidden;
+    white-space: nowrap;
+    color: #606060;
+    line-height: 20px;
+}
+
+
+
+/* left 뉴스 */
+/* group-header부분 */
+.sc-news{ margin-top: 16px; }
+.sc-news .group-header{ padding: 18px 20px 17px; }
+.sc-news .group-header .tab-list{
+    display: flex;
+    font-size: 17px;
+    line-height: 23px;
+    font-weight: 800;
+    color: rgba(8,8,8,.5);
+}
+.sc-news .group-header .tab-item.title+.title::before{
+    display: inline-block;
+    content: "";
+    width: 4px;
+    height: 4px;
+    background-color: #d3d5d7;
+    border-radius: 50%;
+    vertical-align: 5px;
+    margin: 0 7px;
+}
+.sc-news .group-header .cate{
+    position: relative;
+    padding-left: 26px;
+}
+.sc-news .group-header .cate::after{
+    display: block;
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 13px;
+    width: 1px;
+    height: 15px;
+    background-color: #d3d5d7;
+    transform: skewX(-15deg);
+}
+.sc-news .group-header .tab-list .on{ color: black; }
+/* group-issue부분 */
+.sc-news .group-issue{
+    display: flex;
+    justify-content: space-between;
+    background-color: #f5f7f8;;
+    margin: 0 20px;
+    padding: 12px 20px;
+    border-radius: 4px;
+    line-height: 26px;
+    color: #101010;
+    font-size: 15px;
+}
+.sc-news .group-issue .btn-media::after{
+    display: inline-block;
+    content: '';
+    background-position: -133px -201px;
+    width: 9px;
+    height: 6px;
+    margin: 10px 0 0 5px;
+    vertical-align: top;
+}
+.sc-news .group-issue .link-media{
+    position: relative;
+    padding-left: 25px;
+}
+.sc-news .group-issue .link-media::before{
+    display: block;
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 12px;
+    background-color: #d3d5d7;
+    width: 1px;
+    height: 12px;
+}
+.sc-news .group-issue .link-media::after{
+    display: inline-block;
+    content: "";
+    width: 3px;
+    height: 3px;
+    background-color: #d3d5d7;
+    border-radius: 50%;
+    vertical-align: 3px;
+    margin: 0 7px;
+}
+.sc-news .news-area .link-news{
+    display: inline-block;
+    font-weight: bold;
+    vertical-align: top;
+}
+.sc-news .news-area .link-news::before{
+    display: inline-block;
+    content: "";
+    width: 1px;
+    height: 12px;
+    background-color: #d3d5d7;
+    margin: 4px 12px 0;
+}
+/* group-media부분 */
+.sc-news .group-media{
+    position: relative;
+    margin: 18px 20px 18px 20px;
+    border: 1px solid #ebebeb;
+    overflow: hidden;
+    border-radius: 4px;
+}
+.sc-news .group-media .media-list{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(4,1fr);
+    height: 222px;
+}
+.sc-news .group-media .media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* alin-items는 높이가 없으면 정렬이 안됨
+    높이값이 없기때문에 100%로를 줬음 */
+}
+.sc-news .group-media .media img{ height: 20px; }
+/* vt수직선 */
+.sc-news .group-media .vt-line{
+    position: absolute;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background: #d3d5d7;
+}
+.sc-news .group-media .vt-line.vt1{ left:calc(132px); }
+.sc-news .group-media .vt-line.vt2{ left:calc(132px*2); }
+.sc-news .group-media .vt-line.vt3{ left:calc(132px*3); }
+.sc-news .group-media .vt-line.vt4{ left:calc(132px*4); }
+.sc-news .group-media .vt-line.vt5{ left:calc(132px*5); }
+/* hr가로선 */
+.sc-news .group-media .hr-line{
+    position: absolute;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background: #d3d5d7;
+}
+.sc-news .group-media .hr-line.hr1{ top:calc(56px); }
+.sc-news .group-media .hr-line.hr2{ top:calc(56px*2); }
+.sc-news .group-media .hr-line.hr3{ top:calc(56px*3); }
+/* group-cotrol부분 */
+.sc-news .group-control{
+    position: relative;
+    border-top: 1px solid #ebebeb;
+    padding: 10px 0 11px;
+    line-height: 34px;
+    text-align: center;
+}
+.sc-news .group-control .control-area{
+    display: flex;
+    justify-content: center;
+}
+.sc-news .group-control .set-area{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+.sc-news .group-control .btn{
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border: 1px solid #dadcdf;
+    background-color: #fff;
+    position: relative;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.06);
+    border-radius: 50%;
+    vertical-align: top;
+    cursor: pointer;
+}
+.sc-news .group-control .btn-prev{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(180deg);
+}
+.sc-news .group-control .btn-next{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sc-news .group-control .btn-prev::before{
+    content: "";
+    display: block;
+    position: absolute;
+    background-position: -115px -389px;
+    width: 10px;
+    height: 12px;
+}
+.sc-news .group-control .btn-next::before{
+    display: block;
+    content: "";
+    position: absolute;
+    background-image: url(https://pm.pstatic.net/resources/asset/sp_main.89f0d213.png);
+    background-size: 434px 422px;
+    background-position: -115px -389px;
+    width: 10px;
+    height: 12px;
+}
+
+.sc-news .group-control .text-area{
+    display: flex;
+    padding: 0 16px;
+    font-size: 14px;
+    line-height: 35px;
+    font-weight: 600;
+    color: #606060;
+}
+.sc-news .group-control .text-area .media{ color: #3a67ea; }
+.sc-news .group-control .text-area .total{ color: rgba(96,96,96,.5); }
+.sc-news .group-control .btn-thumb{ padding: 18px 20px 18px 9px; }
+.sc-news .group-control .btn-list{ padding: 18px 9px 18px 20px; }
+.sc-news .group-control .btn-thumb::before{
+    display: block;
+    content: '';
+    background-position: -84px -368px;
+    width: 20px;
+    height: 20px;
+}
+.sc-news .group-control .btn-list::before{
+    display: block;
+    content: '';
+    background-position: -391px -208px;
+    width: 20px;
+    height: 20px;
+}
+
+
+
+/* 쇼핑부분 */
+.sc-shopping{ margin-top: 16px; }
+.sc-shopping .group-header{ padding: 19px 20px 16px; }
+.sc-shopping .group-header .tab-list{
+    display: flex;
+    font-size: 17px;
+    line-height: 23px;
+    font-weight: 800;
+    color: rgba(8,8,8,.5);
+}
+.sc-shopping .group-header .cate{ position: relative; }
+.sc-shopping .group-header .cate+.cate{ padding-left: 26px; }
+.sc-shopping .group-header .cate+.cate::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: 13px;
+    width: 1px;
+    height: 15px;
+    background-color: #d3d5d7;
+    transform: skewX(-15deg);
+}
+.sc-shopping .group-header .on{ color: #101010; }
+/* 오늘의 혜택 */
+.sc-shopping .group-benefit{
+    display: flex;
+    margin: 0 20px;
+}
+.sc-shopping .group-benefit-inner{
+    background-color: #f5f7f8;
+    width: 668px;
+    padding: 15px 20px 14px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    line-height: 21px;
+    font-weight: 700;
+}
+.sc-shopping .group-benefit .today-area{
+    display: flex;
+    align-items: center;
+}
+.sc-shopping .group-benefit .text-today{
+    position: relative;
+    color: #101010;
+    font-size: 14.7px;
+    line-height: 16px;
+    letter-spacing: -.4px;
+    padding-right: 19px;
+    font-weight: 700;
+}
+.sc-shopping .group-benefit .text-today::after{
+    display: inline-block;
+    content: "";
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 3px;
+    height: 3px;
+    background-color: #d3d5d7;
+    border-radius: 50%;
+}
+
+.sc-shopping .group-benefit .link-text{
+    color: #404040;
+    font-weight: 500;
+    font-size: 14.7px;
+}
+.sc-shopping .group-benefit .control-area{
+    margin-left: auto;
+    padding: 10px 0;
+}
+.group-benefit .control-area{
+    display: flex;
+    gap: 9px;
+    align-items: center;
+}
+.group-benefit .control-area .btn-area{ display: flex; }
+.group-benefit .control-area .prev{
+    border-radius: 4px 0 0 4px;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border: 1px solid rgba(211,213,215,.8);
+}
+.group-benefit .control-area .next{
+    border-radius: 0 4px 4px 0;
+    margin-left: -2px;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border: 1px solid rgba(211,213,215,.8);
+}
+.group-benefit .control-area .prev::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    transform: translate(-50%,-50%) rotate(45deg);
+    margin-left: 2px;
+    border-left: 2px solid #80868c;
+    border-bottom: 2px solid #80868c;
+    margin-left: 1px;
+}
+.group-benefit .control-area .next::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    transform: translate(-50%,-50%) rotate(45deg);
+    margin-left: -2px;
+    border-top: 2px solid #80868c;
+    border-right: 2px solid #80868c;
+    margin-left: -1px;
+}
+/* 쇼핑 메인리스트 */
+.sc-shopping .group-main{
+    display: flex;
+    height: 394px;
+    padding: 18px 20px 1px;
+}
+.group-main .col-left{
+    width: 522px;
+    margin-right: 20px;
+}
+.group-main .col-left .col-list{
+    display: grid;
+    gap: 8px;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(2,175px);
+}
+.group-main .col-left .col-item a{
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    position: relative;
+}
+.group-main .col-left .col-item img{
+    border-radius: 4px;
+    width: 98px;
+    height: 126px;
+}
+.group-main .col-left .col-item p{
+    font-size: 13.65px;
+    line-height: 19px;
+    letter-spacing: -.4px;
+}
+.group-main .col-left .col-item .sale{
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 10;
+    max-width: 103px;
+    height: 20px;
+    padding: 0 6px;
+    border-radius: 4px 0;
+    background-color: #9858f5;
+    font-size: 11px;
+    line-height: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+/* 쇼핑 오른쪽 부분 */
+.group-main .col-right{ width: 248px; }
+.group-main .col-right .top-area{
+    position: relative;
+    padding: 9px 12px 4px;
+    border-radius: 4px;
+    background: rgba(245,248,251,.6);
+}
+.group-main .col-right .top-area::after{
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid rgba(0,0,0,.05);
+    border-radius: inherit;
+}
+.group-main .col-right .top-area .inner1, .inner2, .inner3{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+    font-size: 14px;
+    line-height: 20px;
+}
+.group-main .col-right .top-area .dot{
+    width: 3px;
+    height: 3px;
+    background-color: #d3d5d7;
+    display: inline-block;
+    border-radius: 50%;
+    vertical-align: top;
+    margin: 9px 0 0;
+}
+.group-main .col-right .top-area .on{ font-weight: bold; }
+.group-main .bottom-area{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    position: relative;
+    margin-top: 12px;
+    padding: 9px;
+    border-radius: 4px;
+    background: rgba(245,248,251,.6);
+}
+.group-main .bottom-area::before{
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid rgba(0,0,0,.05);
+    border-radius: inherit;
+}
+.group-main .bottom-area a{
+    display: flex;
+    gap: 2px;
+    flex-direction: column;
+    align-items: center;
+}
+.group-main .bottom-area i{
+    position: relative;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #fff;
+    line-height: 32px;
+    vertical-align: top;
+    border: 1px solid rgba(238,242,248,.8);
+}
+.group-main .bottom-area p{
+    font-size: 14px;
+    line-height: 20px;
+}
+.group-main .bottom-area i::before{
+    display: block;
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: 50%;
+    left: 50%;
+    background-image: url(https://spastatic.naver.com/v1/shopad/static/shopad-square-node/v2308181828/_next/static/media/sp_main.947f7af2.png);
+    background-size: 134px 121px;
+    background-repeat: no-repeat;
+    transform: translate(-50%,-50%);
+}
+.group-main .ad-area{ margin-top: 10px; }
+.group-main .ad-area img{ border-radius: 4px; }
+.group-main .ad-area .text-ad{
+    margin-top: 8px;
+    font-size: 13.65px;
+    line-height: 19px;
+    text-align: center;
+}
+/* 쇼핑 컨트롤부분 */
+.sc-shopping .group-control{
+    position: relative;
+    border-top: 1px solid #ebebeb;
+    padding: 10px 0 11px;
+    line-height: 34px;
+    text-align: center;
+}
+.sc-shopping .group-control .control-area{
+    display: flex;
+    justify-content: center;
+}
+.sc-shopping .group-control button{
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border: 1px solid #dadcdf;
+    background-color: #fff;
+    position: relative;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.06);
+    border-radius: 50%;
+    vertical-align: top;
+    cursor: pointer;
+}
+.sc-shopping .group-control .btn-prev{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(180deg);
+}
+.sc-shopping .group-control .btn-next{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sc-shopping .group-control .btn-prev::before{
+    display: block;
+    content: "";
+    position: absolute;
+    background-image: url(https://pm.pstatic.net/resources/asset/sp_main.89f0d213.png);
+    background-size: 434px 422px;
+    background-position: -115px -389px;
+    width: 10px;
+    height: 12px;
+}
+.sc-shopping .group-control .btn-next::before{
+    display: block;
+    content: "";
+    position: absolute;
+    background-position: -115px -389px;
+    width: 10px;
+    height: 12px;
+}
+.sc-shopping .group-control .text-area{
+    display: flex;
+    padding: 0 16px;
+    font-size: 14px;
+    line-height: 35px;
+    font-weight: 600;
+    color: #606060;
+}
+.ic-ad{
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    border: 1px solid #e3e5e8;
+    width: 30px;
+    height: 20px;
+    border-radius: 4px;
+}
+.ic-ad p{
+    color: #606060;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+}
+
+
+
+/* 레시피 */
+/* 레시피 헤더부분 */
+.sc-recipe{ margin-top: 16px; }
+.sc-recipe .group-header{ padding: 18px 20px 17px; }
+.sc-recipe .group-header .tab-list{
+    display: flex;
+    font-size: 16.8px;
+    line-height: 23px;
+    font-weight: 800;
+    vertical-align: top;
+    color: rgba(8, 8, 8, 0.5);
+}
+.sc-recipe .group-header .title+.title::before{
+    display: inline-block;
+    content: "";
+    width: 4px;
+    height: 4px;
+    background-color: #d3d5d7;
+    border-radius: 50%;
+    vertical-align: 5px;
+    margin: 0 7px;
+}
+.sc-recipe .group-header .cate{
+    position: relative;
+    padding-left: 26px;
+}
+.sc-recipe .group-header .cate::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: 13px;
+    width: 1px;
+    height: 15px;
+    background-color: #d3d5d7;
+    transform: skewX(-15deg);
+}
+/* 레시피 메인부분 */
+.sc-recipe .group-main{ padding: 0px 20px; }
+.sc-recipe .group-main .top-list{
+    display: flex;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+.sc-recipe .group-main .top-item{ width: 250px; }
+.sc-recipe .group-main .top-item a{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.sc-recipe .group-main .top-item img{
+    width: 100%;
+    height: 144px;
+    border-radius: 4px;
+}
+.sc-recipe .group-main .top-item .text-flex{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.sc-recipe .group-main .top-item .top-text{
+    font-size: 13.65px;
+    line-height: 20px;
+    font-weight: 700;
+    color: rgb(235, 170, 0);
+}
+.sc-recipe .group-main .top-item strong{
+    max-height: 40px;
+    line-height: 20px;
+    text-overflow: ellipsis;
+    font-weight: 600;
+    font-size: 14.7px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.sc-recipe .group-main .top-item .bottom-text{
+    overflow: hidden;
+    max-height: 40px;
+    text-overflow: ellipsis;
+    color: #404040;
+    font-size: 13.65px;
+    line-height: 20px;
+}
+/* 레시피 두번째부분 */
+.sc-recipe .middle-area{ border-top: 1px solid #ebebeb; }
+.sc-recipe .middle-area .middle-list{
+    margin: 24px 0 8px -28px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(4,1fr);
+}
+.sc-recipe .middle-area .middle-item{ width: 381px; }
+.sc-recipe .middle-area .middle-item a{
+    display: flex;
+    width: 381px;
+    gap: 16px;
+    padding: 0 0 16px 28px;
+}
+.sc-recipe .middle-area .middle-item img{
+    display: block;
+    width: 154px;
+    height: 100px;
+    border-radius: 4px; 
+}
+.sc-recipe .middle-area .middle-item .middle-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 100%;
+    min-width: 0;
+}
+.sc-recipe .middle-area .middle-item strong{
+    display: -webkit-box;
+    overflow: hidden;
+    max-height: 42px;
+    line-height: 21px;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-weight: 500;
+    font-size: 14.7px;
+}
+.sc-recipe .middle-area .midde-box-inner{
+    display: flex;
+    align-items: center;
+}
+.sc-recipe .middle-area .middle-text .round-thumb{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    margin: 0 6px 0 0;
+    border-radius: 50%;
+    vertical-align: top;
+}
+.sc-recipe .middle-area .middle-text .name{ color: #606060; }
+.sc-recipe .middle-area .middle-text .round-thumb:before{
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid rgba(0,0,0,.06);
+    border-radius: inherit;
+    background: #ccc;
+}
+
+
+
+/* 레시피 세번째부분 */
+.sc-recipe .last-area{
+    position: relative;
+    border-top: 1px solid #ebebeb;
+}
+.sc-recipe .last-area .bottom-title{
+    display: block;
+    padding: 23px 0 15px;
+    font-size: 15.75px;
+    line-height: 22px;
+    font-weight: 800;
+}
+.sc-recipe .last-area .bottom-list{
+    display: flex;
+    gap: 20px;
+}
+.sc-recipe .last-area .bottom-item{
+    flex: 1;
+    padding: 0 0 20px 0;
+}
+.sc-recipe .last-area .bottom-item img{
+    width: 100%;
+    height: 120px;
+    border-radius: 4px;
+}
+.last-area .bottom-item .text-box{ margin-top: 10px; }
+.last-area .bottom-item .text-top{
+    margin-bottom: 4px;
+    font-size: 13.65px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #ebaa00;
+}
+.last-area .bottom-item strong{
+    display: block;
+    display: -webkit-box;
+    overflow: hidden;
+    max-height: 40px;
+    line-height: 20px;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-weight: 500;
+    font-size: 14.74px;
+}
+.last-area .bottom-item .text-bottom{
+    display: flex;
+    margin-top: 4px;
+    font-size: 13.65px;
+    line-height: 20px;
+}
+.last-area .bottom-item .text-bottom .round-thumb{
+    position: relative;
+    display: inline-block;
+    margin: 0 6px 0 0;
+    border-radius: 50%;
+    vertical-align: top;
+    width: 20px;
+    width: 20px;
+}
+.last-area .bottom-item .text-bottom .round-thumb::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    display: block;
+    border: 1px solid rgba(0,0,0,.06);
+    border-radius: inherit;
+    background: #ccc;
+}
+.last-area .bottom-item .text-bottom .name{ color: #606060; }
+.last-area .btn-next{
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 99px;
+    transform: translateX(50%);
+    width: 36px;
+    height: 36px;
+    border: 1px solid #dadcdf;
+    background-color: #fff;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.06);
+    border-radius: 50%;
+    vertical-align: top;
+    cursor: pointer;
+}
+.last-area .btn-next::before{
+    display: block;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(https://pm.pstatic.net/resources/asset/sp_main.89f0d213.png);
+    background-size: 434px 422px;
+    background-position: -115px -389px;
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 12px;
+    margin: auto;
+}
+/* 레시피 컨트롤부분 */
+.sc-recipe .group-control{
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #ebebeb;
+    color: #404040;
+    width: 100%;
+    font-size: 14px;
+    line-height: 56px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.sc-recipe .group-control .btn-control .ic-plus{
+    display: inline-block;
+    position: relative;
+    width: 10px;
+    height: 10px;
+    margin: 23px 0 0 5px;
+    vertical-align: top;
+}
+.sc-recipe .group-control .btn-control i::before{
+    display: block;
+    position: absolute;
+    content: '';
+    left: 50%;
+    top: 4px;
+    bottom: 4px;
+    width: 100%;
+    transform: translateX(-50%);
+    background-color: #ebaa00;
+}
+.sc-recipe .group-control .btn-control i::after{
+    display: block;
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    left: 4px;
+    right: 4px;
+    height: 100%;
+    background-color: #ebaa00;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

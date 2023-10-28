@@ -1,0 +1,54 @@
+.blind{
+    position: absolute;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    clip: rect(0,0,0,0);
+    margin: -1px;
+}
+
+.stock .stock-item .ic-more::after,
+.stock .stock-item .ic-stock,
+.stock .time-area .btn-refresh::before,
+.stock .header-group .btn-info::before,
+.weather .header-group .link-ic::before,
+.banner-rolling .link-banner .ic-whale,
+.link-navermain .more-text .main-text::before,
+.link-navermain .more-text::before,
+.widgetboard .now-top .now-text::before,
+.papago-box .ic-papago-text::before,
+.widgetboard .papago-icon::before,
+.sc-shopping .group-control .btn-prev::before,
+.sc-shopping .group-control .btn-next::before,
+.sc-Weather .group-header .link-box::before,
+.sc-news .group-control .btn-prev::before,
+.sc-news .group-control .btn-thumb::before,
+.sc-news .group-control .btn-list::before,
+.sc-news .group-control .btn-prev::before,
+.sc-news .group-issue .btn-media::after,
+.col-right .sc-login .auth-area .link-line::before,
+.col-right .sc-login .link-login::before,
+.header .menu-area .btn-menu::after,
+.header .pay-area .link-pay::after,
+.header .talk-area .btn-talk::after,
+.header .alret-area .btn-alret::after,
+.header .gnb-item i::after,
+.header .gnb-item i::before,
+.header .group-search .btn-keyboard::after,
+.header .group-search .btn-help::after,
+.header .group-search .btn-submit::after{
+    background-image: url(../imeges/sp-bg.png);
+    background-size: 434px;
+    background-repeat: no-repeat;
+}
+
+
+.sc-Weather .group-main .ic-area .ic-weather::before{
+        background-image: url(../imeges/sp-bg2.png);
+        background-repeat: no-repeat;
+        background-size: 641px 587px;
+
+}
+
+
+
